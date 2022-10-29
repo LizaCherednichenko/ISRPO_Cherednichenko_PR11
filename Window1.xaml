@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR11"
         mc:Ignorable="d"
-        Title="Window1" Height="434.524" Width="296.429">
+        Title="Теория" Height="434.524" Width="296.429">
     <Grid>
         <StackPanel Orientation="Vertical">
             <TextBlock Margin="10,10,10,10" FontWeight="Bold"> Pick a color from below list</TextBlock>

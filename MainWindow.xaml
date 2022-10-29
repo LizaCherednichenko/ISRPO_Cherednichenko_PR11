@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR11"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="249.077">
+        Title="Чередниченко ПР11 Теория" Height="450" Width="249.077">
 
     <Window.Resources>
         <SolidColorBrush x:Key="Red" Color="LightBlue"/>
