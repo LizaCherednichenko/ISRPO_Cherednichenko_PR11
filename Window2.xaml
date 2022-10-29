@@ -13,6 +13,16 @@
             <GradientStop Color="Aquamarine" Offset="0.7"/>
         </LinearGradientBrush>
         <Style x:Key="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.Foreground" Value="Red"/>
+                    <Setter Property="ItemsControl.RenderTransform">
+                        <Setter.Value>
+                            <RotateTransform Angle="10" CenterX="75" CenterY="25"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
             <Setter Property="ItemsControl.Width" Value="150"/>
             <Setter Property="ItemsControl.Height" Value="50"/>
             <Setter Property="ItemsControl.BorderThickness" Value="10"/>
