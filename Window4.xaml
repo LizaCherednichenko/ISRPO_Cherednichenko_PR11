@@ -6,7 +6,68 @@
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR11"
         mc:Ignorable="d"
         Title="Индивидуальное задание" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="style1">
+            <Setter Property="Button.Background">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="0.004" Color="#FFF5E78C"/>
+                        <GradientStop Offset="0.5" Color="#FFB94539"/>
+                        <GradientStop Offset="1.2" Color="DarkGreen"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Button.BorderBrush" Value="Blue"/>
+            <Setter Property="Button.BorderThickness" Value="6"/>
+        </Style>
+
+        <Style x:Key="style2">
+            <Setter Property="Button.Background" Value="#FFD8C25C"/>
+            <Setter Property="Button.BorderBrush" Value="BlueViolet"/>
+            <Setter Property="Button.BorderThickness" Value="2"/>
+        </Style>
+
+        <Style x:Key="style3">
+            <Setter Property="Button.Background">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="0" Color="Aqua"/>
+                        <GradientStop Offset="0.5" Color="#FF9F7DC7"/>
+                        <GradientStop Offset="1" Color="#FF2C2D4D"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Button.BorderBrush" Value="#FFB1D683"/>
+            <Setter Property="Button.BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="style4">
+            <Setter Property="Button.Background" Value="#FF6F79B8"/>
+            <Setter Property="Button.BorderBrush" Value="#FF8B2252"/>
+            <Setter Property="Button.BorderThickness" Value="13"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="FigureCount"
+                 ToolTip="Inter figure Count"
+                 Margin="5"
+                 Text="10"/>
+            <Button Grid.Column="1" Click="Button_Click">Generate Shapes</Button>
+        </Grid>
+
+        <Canvas x:Name="MainCanvas" Grid.Row="1" Margin="5"/>
+
     </Grid>
 </Window>

@@ -12,16 +12,15 @@
             <Setter Property="Shape.Fill">
                 <Setter.Value>
                     <LinearGradientBrush>
-                        <GradientStop Offset="0" Color="Aqua"/>
-                        <GradientStop Offset="0.5" Color="WhiteSmoke"/>
-                        <GradientStop Offset="1.5" Color="DarkGreen"/>
+                        <GradientStop Offset="0" Color="#FF8D75A0"/>
+                        <GradientStop Offset="1.5" Color="#FF6EBB91"/>
                     </LinearGradientBrush>
                 </Setter.Value>
             </Setter>
             <Setter Property="Shape.Stroke" Value="Blue"/>
             <Setter Property="Shape.StrokeThickness" Value="5"/>
         </Style>
-
+        
         <Style x:Key="style2">
             <Setter Property="Shape.Fill" Value="Blue"/>
             <Setter Property="Shape.Stroke" Value="BlueViolet"/>
