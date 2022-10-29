@@ -23,5 +23,19 @@ namespace ISRPO_Cherednichenko_PR11
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int N = 10;
+            try
+            {
+                N = Convert.ToInt32(FigureCount.Text);
+            }
+            catch (Exception ee)
+            {
+                this.Title = "Только целое число!";
+            }
+            GenerteShapes(N);
+        }
     }
 }
