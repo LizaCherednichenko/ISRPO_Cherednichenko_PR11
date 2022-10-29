@@ -6,9 +6,26 @@
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR11"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="249.077">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="Red" Color="LightBlue"/>
+        <SolidColorBrush x:Key="Black" Color="Black"/>
+        <FontFamily x:Key="Times">Arial</FontFamily>
+        <FontWeight x:Key="Bold"/>
+        <Thickness x:Key="Min">14</Thickness>
+
+        <Style x:Key="ListBoxItemStyle">
+            <Setter Property="ItemsControl.FontFamily" Value="Times New Roman"/>
+            <Setter Property="ItemsControl.FontSize" Value="14"/>
+            <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+            <Setter Property="ItemsControl.Background" Value="{StaticResource Red}"/>
+            <Setter Property="ItemsControl.Foreground" Value="{StaticResource Black}"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <ListBox Margin="10,10,0,0" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="264">
-            <ListBoxItem Background="#FFF7BCA6" Foreground="#FF804C34" FontFamily="Vernada" FontSize="12" FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItemStyle}">
                 <CheckBox x:Name="CoffieCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="image/coffie.jpg" Width="30" Height="30"/>
@@ -17,7 +34,7 @@
                 </CheckBox>
             </ListBoxItem>
 
-            <ListBoxItem Background="#FF8EC990" Foreground="#FF0C4B1E" FontFamily="Vernada" FontSize="12" FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItemStyle}">
                 <CheckBox x:Name="TeaCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="image/tea.jpg" Width="30" Height="30"/>
@@ -26,7 +43,7 @@
                 </CheckBox>
             </ListBoxItem>
 
-            <ListBoxItem Background="#FFFFB83C" Foreground="#FFFF4600" FontFamily="Vernada" FontSize="12" FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItemStyle}">
                 <CheckBox x:Name="OrangeJuiceCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="image/orange juice.jpg" Width="30" Height="30"/>
@@ -35,7 +52,7 @@
                 </CheckBox>
             </ListBoxItem>
 
-            <ListBoxItem Background="#FFEADACD" Foreground="#FFC9907C" FontFamily="Vernada" FontSize="12" FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItemStyle}">
                 <CheckBox x:Name="MilkCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="image/milk.jpg" Width="30" Height="30"/>
@@ -44,7 +61,7 @@
                 </CheckBox>
             </ListBoxItem>
 
-            <ListBoxItem Background="#FFB0F9EF" Foreground="#FF2B95EE" FontFamily="Vernada" FontSize="12" FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItemStyle}">
                 <CheckBox x:Name="IcedTeaCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="image/iced tea.jpg" Width="30" Height="30"/>
@@ -53,7 +70,7 @@
                 </CheckBox>
             </ListBoxItem>
 
-            <ListBoxItem Background="#FFCB9CEC" Foreground="#FFFF6800" FontFamily="Vernada" FontSize="12" FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItemStyle}">
                 <CheckBox x:Name="MangoShakeCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="image/mango shake.jpg" Width="30" Height="30"/>
