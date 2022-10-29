@@ -24,5 +24,29 @@ namespace ISRPO_Cherednichenko_PR11
         {
             InitializeComponent();
         }
+
+        private void b1_Click(object sender, RoutedEventArgs e)
+        {
+            Window window1 = new Window1();
+            window1.Show();
+        }
+
+        private void b2_Click(object sender, RoutedEventArgs e)
+        {
+            Window window2 = new Window2();
+            window2.Show();
+        }
+
+        private void b3_Click(object sender, RoutedEventArgs e)
+        {
+            Window window3 = new Window3();
+            window3.Show();
+        }
+
+        private void b4_Click(object sender, RoutedEventArgs e)
+        {
+            Window window4 = new Window4();
+            window4.Show();
+        }
     }
 }
