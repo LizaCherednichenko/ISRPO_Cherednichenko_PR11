@@ -49,22 +49,22 @@ namespace ISRPO_Cherednichenko_PR11
 
             for (int i = 0; i < N; i++)
             {
-                Button currentShape;
+                Button button;
                 int shapeType = rndButton.Next(0, 2);
-                currentShape = new Button();
+                button = new Button();
                 
 
-                int shareStyle = rndStyle.Next(0, 4) + 1;
-                String styleName = "style" + shareStyle.ToString();
-                Style currentStyle = (Style)this.FindResource(styleName);
-                currentShape.Style = currentStyle;
+                int b1Style = rndStyle.Next(0, 4) + 1;
+                String styleName = "style" + b1Style.ToString();
+                Style b2Style = (Style)this.FindResource(styleName);
+                button.Style = b2Style;
 
-                currentShape.Width = rndSize.Next(15, 250);
-                currentShape.Height = rndSize.Next(20, 200);
+                button.Width = rndSize.Next(15, 250);
+                button.Height = rndSize.Next(20, 200);
 
-                MainCanvas.Children.Add(currentShape);
-                Canvas.SetLeft(currentShape, rndPosition.Next(15, 700));
-                Canvas.SetTop(currentShape, rndPosition.Next(15, 300));
+                MainCanvas.Children.Add(button);
+                Canvas.SetLeft(button, rndPosition.Next(15, 700));
+                Canvas.SetTop(button, rndPosition.Next(15, 300));
             }
         }
 

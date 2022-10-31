@@ -20,12 +20,27 @@
             </Setter>
             <Setter Property="Button.BorderBrush" Value="Blue"/>
             <Setter Property="Button.BorderThickness" Value="6"/>
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.RenderTransform">
+                        <Setter.Value>
+                            <RotateTransform Angle="34" CenterX="50" CenterY="50"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style x:Key="style2">
             <Setter Property="Button.Background" Value="#FFD8C25C"/>
             <Setter Property="Button.BorderBrush" Value="BlueViolet"/>
             <Setter Property="Button.BorderThickness" Value="2"/>
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="Button.BorderThickness" Value="20"/>
+                    <Setter Property="Button.BorderBrush" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style x:Key="style3">
@@ -40,12 +55,26 @@
             </Setter>
             <Setter Property="Button.BorderBrush" Value="#FFB1D683"/>
             <Setter Property="Button.BorderThickness" Value="1"/>
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="Button.Cursor" Value="Hand" />
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style x:Key="style4">
             <Setter Property="Button.Background" Value="#FF6F79B8"/>
             <Setter Property="Button.BorderBrush" Value="#FF8B2252"/>
             <Setter Property="Button.BorderThickness" Value="13"/>
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.RenderTransform">
+                        <Setter.Value>
+                            <RotateTransform Angle="-40" CenterX="10" CenterY="10"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
         </Style>
     </Window.Resources>
 
